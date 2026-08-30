@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+httpx
+tenacity
+loguru
+pytest
+pytest-asyncio
+docling>=2.102,<3.0
+transformers>=4.40,<6.0
+qdrant-client>=1.18,<2.0
+fastembed>=0.7,<1.0
+pip-audit
+google-genai>=1.0,<2.0
