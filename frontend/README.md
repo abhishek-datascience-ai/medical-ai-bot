@@ -26,25 +26,6 @@ The frontend provides:
 | API Client | Browser `fetch` |
 | Backend    | FastAPI         |
 
----
-
-## Folder Structure
-
-```text
-frontend/
-â”œâ”€â”€ src/
-â”‚   â””â”€â”€ app/
-â”‚       â”œâ”€â”€ globals.css
-â”‚       â”œâ”€â”€ layout.tsx
-â”‚       â””â”€â”€ page.tsx
-â”œâ”€â”€ .env.local
-â”œâ”€â”€ package.json
-â”œâ”€â”€ next.config.ts
-â””â”€â”€ README.md
-```
-
----
-
 ## Environment Configuration
 
 Create this file:
@@ -167,7 +148,7 @@ POST /chat
 Login as:
 
 ```text
-Billing Ravi â€” Billing Executive
+Billing Ravi - Billing Executive
 ```
 
 Ask:
@@ -191,7 +172,7 @@ No document sources returned.
 Login as:
 
 ```text
-Nurse Priya â€” Nurse
+Nurse Priya - Nurse
 ```
 
 Ask:
@@ -214,7 +195,7 @@ As a nurse, you do not have access to SQL analytics.
 Login as:
 
 ```text
-Dr. Mehta â€” Doctor
+Dr. Mehta - Doctor
 ```
 
 Ask:
@@ -237,7 +218,7 @@ Sources from clinical or nursing collections.
 Login as:
 
 ```text
-Nurse Priya â€” Nurse
+Nurse Priya - Nurse
 ```
 
 Ask:
@@ -260,7 +241,7 @@ Sources from nursing or general collections only.
 Login as:
 
 ```text
-Tech Anand â€” Technician
+Tech Anand - Technician
 ```
 
 Ask:

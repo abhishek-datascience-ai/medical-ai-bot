@@ -75,73 +75,6 @@ Access control is enforced at the retrieval layer using Qdrant metadata filters.
 
 These accounts are for demonstration only.
 
----
-
-## Dataset Layout
-
-The project expects the dataset at:
-
-```text
-data/raw/mediassist_data/
-```
-
-Expected structure:
-
-```text
-mediassist_data/
-â”œâ”€â”€ billing/
-â”‚   â”œâ”€â”€ billing_codes.pdf
-â”‚   â””â”€â”€ claim_submission_guide.md
-â”œâ”€â”€ clinical/
-â”‚   â”œâ”€â”€ diagnostic_reference.pdf
-â”‚   â”œâ”€â”€ drug_formulary.pdf
-â”‚   â””â”€â”€ treatment_protocols.pdf
-â”œâ”€â”€ db/
-â”‚   â””â”€â”€ mediassist.db
-â”œâ”€â”€ equipment/
-â”‚   â””â”€â”€ equipment_manual.pdf
-â”œâ”€â”€ general/
-â”‚   â”œâ”€â”€ code_of_conduct.pdf
-â”‚   â”œâ”€â”€ general_faqs.pdf
-â”‚   â”œâ”€â”€ leave_policy.pdf
-â”‚   â””â”€â”€ staff_handbook.pdf
-â””â”€â”€ nursing/
-    â”œâ”€â”€ icu_nursing_procedures.pdf
-    â””â”€â”€ infection_control.pdf
-```
-
----
-
-## Project Structure
-
-```text
-medical-ai-bot/
-â”œâ”€â”€ backend/
-â”‚   â””â”€â”€ app/
-â”‚       â”œâ”€â”€ api/
-â”‚       â”œâ”€â”€ core/
-â”‚       â”œâ”€â”€ db/
-â”‚       â”œâ”€â”€ rag/
-â”‚       â”œâ”€â”€ schemas/
-â”‚       â””â”€â”€ services/
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ raw/
-â”‚   â”œâ”€â”€ processed/
-â”‚   â””â”€â”€ vector_store/
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ medical_ai_bot_architecture_flowchart.png
-â”‚   â””â”€â”€ screenshots/
-â”œâ”€â”€ frontend/
-â”‚   â””â”€â”€ src/
-â”‚       â””â”€â”€ app/
-â”œâ”€â”€ scripts/
-â”œâ”€â”€ .env.example
-â”œâ”€â”€ .gitignore
-â””â”€â”€ README.md
-```
-
----
-
 ## Environment Setup
 
 Create and activate a virtual environment:
@@ -502,7 +435,7 @@ http://localhost:3000
 Login as:
 
 ```text
-Billing Ravi â€” Billing Executive
+Billing Ravi - Billing Executive
 ```
 
 Ask:
@@ -524,7 +457,7 @@ No document sources returned.
 Login as:
 
 ```text
-Nurse Priya â€” Nurse
+Nurse Priya - Nurse
 ```
 
 Ask:
@@ -545,7 +478,7 @@ As a nurse, you do not have access to SQL analytics.
 Login as:
 
 ```text
-Dr. Mehta â€” Doctor
+Dr. Mehta - Doctor
 ```
 
 Ask:
@@ -566,7 +499,7 @@ Sources from clinical or nursing collections.
 Login as:
 
 ```text
-Nurse Priya â€” Nurse
+Nurse Priya - Nurse
 ```
 
 Ask:
@@ -587,7 +520,7 @@ Sources from nursing or general collections only.
 Login as:
 
 ```text
-Tech Anand â€” Technician
+Tech Anand - Technician
 ```
 
 Ask:

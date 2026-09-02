@@ -85,10 +85,6 @@ class AppSettings(BaseSettings):
         alias="ACCESS_TOKEN_EXPIRE_MINUTES",
     )
 
-    # LLM Provider
-    openai_api_key: str = Field(default="", alias="OPENAI_API_KEY")
-    openai_model: str = Field(default="gpt-4o-mini", alias="OPENAI_MODEL")
-
     # Qdrant connection
     qdrant_mode: Literal["local", "server", "cloud"] = Field(
         default="local",
@@ -232,11 +228,6 @@ class AppSettings(BaseSettings):
             if not self.secret_key or self.secret_key == "replace-with-secure-secret-key":
                 raise ConfigurationError(
                     "SECRET_KEY must be set securely in production."
-                )
-
-            if not self.openai_api_key or self.openai_api_key == "your-openai-api-key":
-                raise ConfigurationError(
-                    "OPENAI_API_KEY must be set securely in production."
                 )
 
         return self
